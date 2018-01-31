@@ -214,6 +214,15 @@ Github issues tracks features and bugs, for new developers the tag 'easy-pick' i
 issue that should be relatively easy for new developers to understand and complete. Once you have completed an issue
 a pull request should be submitted. This will then be reviewed by the community.
 
+## Setup
+1. create virtual environment
+    1. virtualenv {name} --system-site-packages
+1. pip install -r requirements.txt --no-deps
+1. run migrations
+    1. python manage.py migrate sites
+    1. python manage.py migrate account
+    1. python manage.py migrate
+
 GPL License
 ===========
 
